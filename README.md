@@ -4,6 +4,7 @@ unilog-console
 [![Build Status](https://travis-ci.org/fluidsonic/unilog-console.png?branch=master)](https://travis-ci.org/fluidsonic/unilog-console)
 [![Dependency Status](https://gemnasium.com/fluidsonic/unilog-console.png)](https://gemnasium.com/fluidsonic/unilog-console)
 [![Code Climate](https://codeclimate.com/github/fluidsonic/unilog-console.png)](https://codeclimate.com/github/fluidsonic/unilog-console)
+[![dependencies](https://sourcegraph.com/api/repos/github.com/fluidsonic/unilog-console/badges/dependencies.png)](https://sourcegraph.com/github.com/fluidsonic/unilog-console)
 
 A node.js [unilog](https://github.com/fluidsonic/unilog) back-end which logs nicely formatted to the console.
 
