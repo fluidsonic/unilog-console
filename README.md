@@ -1,6 +1,9 @@
 unilog-console
 ==============
 
+[![Build Status](https://travis-ci.org/fluidsonic/unilog-console.png?branch=master)](https://travis-ci.org/fluidsonic/unilog-console)
+[![Dependency Status](https://gemnasium.com/fluidsonic/unilog-console.png)](https://gemnasium.com/fluidsonic/unilog-console)
+
 A node.js [unilog](https://github.com/fluidsonic/unilog) back-end which logs nicely formatted to the console.
 
 ```
