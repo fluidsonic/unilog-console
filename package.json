@@ -1,0 +1,30 @@
+{
+  "name": "unilog-console",
+  "version": "0.0.2",
+  "description": "A unilog back-end which logs nicely formatted to the console.",
+  "keywords": [
+    "console",
+    "log",
+    "logger",
+    "logging",
+    "unilog"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/fluidsonic/unilog-console",
+  "bugs": "https://github.com/fluidsonic/unilog-console/issues",
+  "author": "Marc Knaup <marc.knaup@koeln.de>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fluidsonic/unilog-console.git"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha -- --reporter spec"
+  },
+  "devDependencies": {
+    "expect.js": "~0.3.1",
+    "istanbul": "~0.2.6",
+    "mocha": "~1.17.1",
+    "mocha-lcov-reporter": "~0.0.1"
+  }
+}
