@@ -394,8 +394,15 @@ describe('Helper', function() {
 		if (/^win/.test(process.platform)) {
 			it('resolves modules on other drives to "other.*"', function() {
 				var helper = new Helper();
-				helper.config({ mainPath: 'C:\\main' });
+				helper.config({ mainPath: 'C:\\' });
 				expect(helper.groupIdForFilePath('D:\\alternate\\test\\foo.js')).to.be.equal('other.alternate.test.foo');
+			});
+		}
+		else {
+			it('drive letters aren\'t really supported on non-Windows but we want 100% coverage :)', function() {
+				var helper = new Helper();
+				helper.config({ mainPath: '/test' });
+				expect(helper.groupIdForFilePath('/test/D:/foo.js')).to.be.equal('other.foo');
 			});
 		}
 
