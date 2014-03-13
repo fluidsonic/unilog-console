@@ -26,6 +26,11 @@ var Console = require('unilog-console');
 var backend = new Console({ /* optional configuration */ });
 ```
 
+Filtering the output is simple:
+
+    $ export UNILOG='*:info main:trace mongodb:debug'
+    $ node .
+
 
 Methods
 -------
