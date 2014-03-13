@@ -391,11 +391,13 @@ describe('Helper', function() {
 			expect(helper.groupIdForFilePath('/alternate/test/foo.js')).to.be.equal('other.alternate.test.foo');
 		});
 
-		it('resolves modules on other disk to "other.*"', function() {
-			var helper = new Helper();
-			helper.config({ mainPath: 'C:\\main' });
-			expect(helper.groupIdForFilePath('D:\\alternate\\test\\foo.js')).to.be.equal('other.alternate.test.foo');
-		});
+		if (/^win/.test(process.platform)) {
+			it('resolves modules on other drives to "other.*"', function() {
+				var helper = new Helper();
+				helper.config({ mainPath: 'C:\\main' });
+				expect(helper.groupIdForFilePath('D:\\alternate\\test\\foo.js')).to.be.equal('other.alternate.test.foo');
+			});
+		}
 
 		it('sanitizes group IDs', function() {
 			var helper = new Helper();
