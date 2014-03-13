@@ -37,6 +37,7 @@ Filtering the output is simple:
     $ node .
 
 
+
 Methods
 -------
 
@@ -80,6 +81,14 @@ See [unilog's back-end documentation of `.putEvent(event)`](https://github.com/f
 #### `.eventEnabled(event)`
 
 See [unilog's back-end documentation of `.eventEnabled(event)`](https://github.com/fluidsonic/unilog#eventenabledevent).
+
+
+
+Output Destination
+------------------
+
+- `trace`, `debug` and `info` log to `process.stdout`
+- `warn`, `error` and `fatal` log to `process.stderr`
 
 
 
