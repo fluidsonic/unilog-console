@@ -10,8 +10,8 @@ var Util = require('util');
 var _formattedLevelByLevel = {
 	trace: 'TRACE',
 	debug: 'DEBUG',
-	info:  ' INFO',
-	warn:  ' WARN',
+	info:  'INFO ',
+	warn:  'WARN ',
 	error: 'ERROR',
 	fatal: 'FATAL',
 };

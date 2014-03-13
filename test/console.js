@@ -8,8 +8,8 @@ var fakeStream = require('./helpers/fakeStream');
 var _formattedLevelByLevel = {
 	trace: 'TRACE',
 	debug: 'DEBUG',
-	info:  ' INFO',
-	warn:  ' WARN',
+	info:  'INFO ',
+	warn:  'WARN ',
 	error: 'ERROR',
 	fatal: 'FATAL',
 };
