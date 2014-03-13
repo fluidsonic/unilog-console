@@ -255,6 +255,22 @@ describe('Helper', function() {
 
 	describe('#formatMessageElement()', function() {
 
+		it('formats errors with stack if possible', function() {
+			var helper = new Helper();
+
+			var errorWithStack = new Error();
+
+			var errorWithMessage = new Error('error message');
+			delete errorWithMessage.stack;
+
+			var otherError = new Error();
+			delete otherError.stack;
+
+			expect(helper.formatMessageElement(errorWithStack)).to.be.equal(errorWithStack.stack);
+			expect(helper.formatMessageElement(errorWithMessage)).to.be.equal('error message');
+			expect(helper.formatMessageElement(otherError)).to.be.equal(Util.inspect(otherError));
+		});
+
 		it('inspects non-strings', function() {
 			expect(new Helper().formatMessageElement({ a: ['b'] })).to.be.equal(Util.inspect({ a: ['b'] }));
 		});
