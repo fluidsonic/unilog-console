@@ -39,6 +39,7 @@
 	"plusplus": false,
 	"proto": false,
 	"prototypejs": false,
+	"quotmark": "single",
 	"regexdash": false,
 	"regexp": true,
 	"rhino": false,
@@ -50,6 +51,7 @@
 	"supernew": false,
 	"trailing": true,
 	"undef": true,
+	"unused": true,
 	"validthis": false,
 	"white": false,
 	"wsh": false
